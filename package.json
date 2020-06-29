@@ -1,0 +1,23 @@
+{
+  "name": "adminpanel",
+  "version": "1.0.0",
+  "description": "admin panel for dental luxury",
+  "main": "app.js",
+  "scripts": {
+    "client": "cd client && npm run serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.4"
+  }
+}
